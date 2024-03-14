@@ -15,6 +15,12 @@
 
 ### Delete query
 <image src="./screenshots/delete.jpeg">
+
+### Создание индекса
 <image src="./screenshots/index.jpeg">
+
+### Время работы запроса поиска без индекса(executionTimeMillis: 11):
 <image src="./screenshots/time_without_index.jpeg">
+
+### Время работы запроса поиска с индексом(поле executionTimeMillis: 5):
 <image src="./screenshots/time_with_index.jpeg">
