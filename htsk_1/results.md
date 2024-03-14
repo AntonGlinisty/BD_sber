@@ -1,4 +1,5 @@
-<image src="./screenshots/download.jpeg" alt="MongoDb установлена локально">
+## MongoDb установлена локально
+<image src="./screenshots/download.jpeg">
 <image src="./screenshots/add_data.jpeg">
 <image src="./screenshots/create.jpeg">
 <image src="./screenshots/read.jpeg">
