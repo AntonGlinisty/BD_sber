@@ -1,7 +1,7 @@
 services:
   node1:
     container_name: node1
-    image: redis:latest
+    image: redis
     hostname: node1
     ports:
       - 7000:7000
@@ -12,7 +12,7 @@ services:
 
   node2:
     container_name: node2
-    image: redis:latest
+    image: redis
     hostname: node2
     ports:
       - 7001:7001
@@ -23,7 +23,7 @@ services:
 
   node3:
     container_name: node3
-    image: redis:latest
+    image: redis
     hostname: node3
     ports:
       - 7002:7002

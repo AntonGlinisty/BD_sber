@@ -26,7 +26,7 @@ python3 main.py
 
 #### Результаты:
 
-<image src="./screenshots/time.png">
+<image src="./screenshots/time.jpeg">
 
 ## Развернем кластер redis в docker контейнерах
 
@@ -49,6 +49,26 @@ docker exec -it node1 redis-cli --cluster create \
 docker exec -it node1 redis-cli --cluster check node1:7000
 ```
 
+#### Заходим в один из контейнеров для выполнения скрипта:
+
+```
+docker exec -it node1 bash
+```
+
+#### Устанавливаем дополнительную зависимость:
+```
+apt install python3-rediscluster
+```
+
+#### Запуск скрипта:
+```
+python3 /volumes/cluster.py
+```
+
 #### Результаты:
 
-<image src="./screenshots/cluster.png">
+<image src="./screenshots/cluster.jpeg">
+
+#### Вывод:
+##### Время на сохранение данных на кластере увеличилось. Вероятно, это связано с синхронизацией данных между нодами.
+##### Время на чтение данных для некоторых структур данных несколько увеличилось, а для некоторых осталось тем же. Если данные не разнеслись на разные ноды в результате шардирования, то прочитать их можно с одной ноды, что не требует дополнительных временных затрат.
