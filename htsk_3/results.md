@@ -25,3 +25,9 @@ python3 main.py
 ##### Прописываем в html файле путь к инсталяции couchdb, запускаем его и нажимаем кнопку "sync".
 
 <image src="./screenshots/html.png">
+
+##### Остановим службу couchdb и убедимся в том, что фамилия все еще отображается:
+
+```
+sudo systemctl stop couchdb
+```
